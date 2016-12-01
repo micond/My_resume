@@ -90,7 +90,7 @@ $(document).click(function(loc) {
 function locationizer(work_obj) {
     var newArray = [];
     for (var key in work_obj.jobs) {
-        if (work_obj.jobs.hasOwnProperty(project)) {
+        if (work_obj.jobs.hasOwnProperty(key)) {
             newArray.push(work_obj.jobs[key].location);
         }
     }
