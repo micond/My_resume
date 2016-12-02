@@ -68,6 +68,12 @@ $(document).ready(function() {
     });
 });
 
+function inName() {
+    var splitName = bio.name.split(" ");
+    InternationalizeName = ((splitName[0] = (splitName[0].slice(0, 1).toUpperCase()) +
+        (splitName[0].slice(1).toLowerCase())) + " " + splitName[1].toUpperCase());
+    return InternationalizeName;
+}
 /*
 The next few lines about clicks are for the Collecting Click Locations quiz in the lesson Flow Control from JavaScript Basics.
 */
